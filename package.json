@@ -1,0 +1,25 @@
+{
+  "name": "dinasour-generator",
+  "version": "1.0.0",
+  "description": "This app displays the name and picture of a random dinasour taken from two api's",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreatDeveloper66/Dinasour-Generator.git"
+  },
+  "keywords": [
+    "api",
+    "random",
+    "dinasour",
+    "node"
+  ],
+  "author": "Adam Shaffer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GreatDeveloper66/Dinasour-Generator/issues"
+  },
+  "homepage": "https://github.com/GreatDeveloper66/Dinasour-Generator#readme"
+}
