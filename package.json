@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/GreatDeveloper66/Dinasour-Generator#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
