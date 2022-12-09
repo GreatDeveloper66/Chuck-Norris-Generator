@@ -1,7 +1,8 @@
 {
   "name": "dinasour-generator",
   "version": "1.0.0",
-  "description": "This app displays the name and picture of a random dinasour taken from two api's",
+  "description": "This app displays the name and picture of a random Chuck Norris quote",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GreatDeveloper66/Dinasour-Generator.git"
+    "url": "git+https://github.com/GreatDeveloper66/Chuck-Norris-Generator.git"
   },
   "keywords": [
     "api",
     "random",
-    "dinasour",
+    "chuck",
     "node"
   ],
   "author": "Adam Shaffer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GreatDeveloper66/Dinasour-Generator/issues"
+    "url": "https://github.com/GreatDeveloper66/Chuck-Norris-Generator/issues"
   },
-  "homepage": "https://github.com/GreatDeveloper66/Dinasour-Generator#readme",
+  "homepage": "https://github.com/GreatDeveloper66/Chuck-Norris-Generato#readme",
   "dependencies": {
     "express": "^4.18.2",
     "node-fetch": "^3.3.0"
