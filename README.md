@@ -1,2 +1,2 @@
 # Dinasour-Generator
-## This app displays the name and picture of a random dinasour taken from two api's. 
+## This app displays Chuck Norris sayings from an api. 
