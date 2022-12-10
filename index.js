@@ -1,16 +1,14 @@
-if(process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
-}
 
-const express = require('express')
+import * as dotenv from 'dotenv'
+dotenv.config()
+import express from 'express'
 const app = express()
 const port = 3000
-const fetch = require('node-fetch');
+import fetch from 'node-fetch'
 const api_key = process.env.X-RapidAPI-Key
 const api_host = proces.env.X-RapidAPI-Host
 
 app.use(express.static('public'))
-
 
 app.listen(port, () => {
     console.log(`app is listening at http://localhost:${port}`)
