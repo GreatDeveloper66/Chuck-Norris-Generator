@@ -1,12 +1,13 @@
 
 import * as dotenv from 'dotenv'
 dotenv.config()
+
 import express from 'express'
 const app = express()
 const port = 3000
 import fetch from 'node-fetch'
-const api_key = process.env.X-RapidAPI-Key
-const api_host = proces.env.X-RapidAPI-Host
+const api_key = process.env.XRapidAPIKey
+const api_host = process.env.XRapidAPIHost
 
 app.use(express.static('public'))
 
