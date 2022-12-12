@@ -12,13 +12,17 @@ const api_host = process.env.XRapidAPIHost
 const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
 
 const options = {
-    method: 'GET',
-    headers: {
+  method: 'GET',
+  headers: {
     accept: 'application/json',
     'X-RapidAPI-Key': api_key,
     'X-RapidAPI-Host': api_host
-    }
-    };
+  }
+};
+
+
+
+
 
 app.use(express.static('public'))
 
@@ -27,10 +31,10 @@ app.listen(port, () => {
 })
 
 app.get('/chucknorrisrandomjoke', async (request, response) => {
-    fetch(url,options).
-        then(res => res.json()).
-        then(data => response = data).
-            catch(err => console.log("error: " + err))
+   const fetchAPI = await fetch(url,options)
+   const chuckNorrisResponse = await fetchAPI.json()
+   response.json(chuckNorrisResponse)
+        
 })
 
 
