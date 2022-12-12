@@ -1,6 +1,10 @@
 console.log('script.js loaded')
 
-fetch('/chucknorrisrandomjoke').then(res => res.json()).then((data) => console.log(data)).catch(err => console.log(err))
+fetch('/chucknorrisrandomjoke').
+    then(res => res.json()).
+    then((data) => console.log("data: " + data)).
+    catch(err => console.log(`this is an error: {err}`))
+
 /*
 getChuckNorrisQuote()
 async function getChuckNorrisQuote() {

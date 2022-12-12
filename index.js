@@ -27,12 +27,10 @@ app.listen(port, () => {
 })
 
 app.get('/chucknorrisrandomjoke', async (request, response) => {
-    const fetchAPI = await fetch(url, options)
-    .then(res => res.json())
-    .then(json => console.log(json))
-    .catch(err => console.error('error:' + err));
-    const fetchResponse = await fetchAPI.json()
-    response.json(fetchResponse)
+    fetch(url,options).
+        then(res => res.json()).
+        then(data => response = data).
+            catch(err => console.log("error: " + err))
 })
 
 
