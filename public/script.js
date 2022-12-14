@@ -1,20 +1,13 @@
-console.log('script.js loaded')
-
-
-
-
-
-console.log(document.getElementById("chuckNorrisQuote"))
-
 async function getChuckNorrisQuote() {
     const response = await fetch('/chucknorrisrandomjoke')
     const jsonResponse = await response.json()
     console.log(jsonResponse)
     const fact = jsonResponse.value
-    const imgUrl = jsonResponse.icon_url
+    const imgUrl = jsonResponse.url
 
     document.getElementById("chuckNorrisQuote").innerHTML = fact
-    document.getElementById("chuckNorrisImage").getAttributeNode("src").value = imgUrl
+    console.log(imgUrl)
+    document.getElementById("chuckNorrisImage").src = imgUrl
 }
 
 window.addEventListener("load", event => {
