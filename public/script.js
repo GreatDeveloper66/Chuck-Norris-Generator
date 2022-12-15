@@ -3,9 +3,12 @@ async function getChuckNorrisQuote() {
     const jsonResponse = await response.json()
     console.log(jsonResponse)
     const fact = jsonResponse.value
-    const imgUrl = jsonResponse.url
+    
 
     document.getElementById("chuckNorrisQuote").innerHTML = fact
+    const randNum = Math.ceil(Math.random(1,4)*4)
+    console.log(randNum)
+    document.getElementById("chuckNorrisImage").src=`/images/chuck_norris/chuck-norris${randNum}.jpg`
     
 }
 
@@ -14,6 +17,7 @@ window.addEventListener("load", event => {
     document.getElementById("refreshButton").addEventListener("click", () => {
         getChuckNorrisQuote()
     })
+    
 
 })
 
