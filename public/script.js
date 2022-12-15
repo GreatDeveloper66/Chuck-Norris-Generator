@@ -6,8 +6,7 @@ async function getChuckNorrisQuote() {
     const imgUrl = jsonResponse.url
 
     document.getElementById("chuckNorrisQuote").innerHTML = fact
-    console.log(imgUrl)
-    document.getElementById("chuckNorrisImage").src = imgUrl
+    
 }
 
 window.addEventListener("load", event => {
