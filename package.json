@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/GreatDeveloper66/Chuck-Norris-Generato#readme",
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "express": "^4.18.2",
     "node-fetch": "^3.3.0"
   },
