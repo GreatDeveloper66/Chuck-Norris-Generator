@@ -6,7 +6,7 @@ async function getChuckNorrisQuote() {
     
 
     document.getElementById("chuckNorrisQuote").innerHTML = fact
-    const randNum = Math.ceil(Math.random(1,4)*4)
+    const randNum = Math.ceil(Math.random(1,10)*10)
     console.log(randNum)
     document.getElementById("chuckNorrisImage").src=`/images/chuck_norris/chuck-norris${randNum}.jpg`
     
