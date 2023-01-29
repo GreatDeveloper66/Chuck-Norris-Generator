@@ -6,10 +6,10 @@ import fetch from 'node-fetch'
 
 /*constants*/
 const app = express()
-const port = 3000
+const port = process.env.DEFAULT_PORT
 const api_key = process.env.XRapidAPIKey
 const api_host = process.env.XRapidAPIHost
-const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
+const url = process.env.API_URL
 const options = {
   method: 'GET',
   headers: {
